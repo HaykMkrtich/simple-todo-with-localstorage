@@ -1,0 +1,19 @@
+@import './src/styles/reusable_styles.scss';
+.wrapper {
+  @extend .main;
+  @include container(0);
+  width: 100%;
+  .add_todo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  @media (max-width: 40rem) {
+    .add_todo {
+      gap: 0.5rem;
+    }
+  }
+}

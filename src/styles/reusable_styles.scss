@@ -1,0 +1,15 @@
+@mixin container($padding) {
+  padding: 0 $padding + 22.5rem;
+  @media (max-width: 70rem) {
+    padding: 0 $padding + 2.5rem;
+  }
+}
+
+.main {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  min-height: calc(100vh - 19rem);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

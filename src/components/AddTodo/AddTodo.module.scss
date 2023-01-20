@@ -1,0 +1,36 @@
+@import './src/styles/reusable_styles.scss';
+
+.wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  .input {
+    width: 17rem;
+    height: 3rem;
+    background: #ffffff;
+    border: 2px solid var(--text-color);
+    border-radius: 12px 0 0 12px;
+    padding-left: 1rem;
+    outline: none;
+  }
+  .button {
+    width: 6.25rem;
+    height: 3rem;
+    cursor: pointer;
+    color: white;
+    background: var(--text-color);
+    border-width: 2px 0 2px 2px;
+    border-style: solid;
+    border-color: #000000;
+    font-size: 12px;
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
+    border-radius: 0 12px 12px 0;
+  }
+  @media (max-width: 40rem) {
+    .input {
+      width: 9rem;
+    }
+    .button {
+      width: 5rem;
+    }
+  }
+}
